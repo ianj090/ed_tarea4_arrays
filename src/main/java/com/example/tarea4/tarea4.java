@@ -17,8 +17,8 @@ public class tarea4 {
     int[] eliminate_arr = new int[size_eliminate];
 
     @RequestMapping("/")
-    public String index(@RequestParam Integer[] num1, Integer[] num2, Integer[] num3) {
-        setArrays(num1, num2, num3);
+    public String index(@RequestParam Integer[] debits, Integer[] credits, Integer[] eliminations) {
+        setArrays(debits, credits, eliminations);
         return
                 "El total de Débitos es: " + totalDebit() + "<br>"
                 + "El total de Créditos es: " + totalCredit() + "<br>"
